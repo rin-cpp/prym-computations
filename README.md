@@ -1,4 +1,4 @@
-# Magma computations for arithmetic Prym constructions
+# Magma computations for Prym constructions
 
 This repository contains Magma code accompanying the thesis
 
