@@ -16,3 +16,10 @@ The code implements computations involving:
 - the two-torsion associated with Prym varieties of bielliptic genus-3 curves.
 
 The computations are used in the explicit examples appearing in the thesis (or future documents).
+
+## Requirements
+
+The code is written for Magma.
+
+Magma Computational Algebra System:
+https://magma.maths.usyd.edu.au/
