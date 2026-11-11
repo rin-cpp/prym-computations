@@ -28,11 +28,12 @@ idmat := smat^0;
 // Represent the various maps by group ring elements 
 phi := idmat+smat;
 psi := idmat+rmat*smat;
-phi := idmat+smat+rmat^2+rmat^2*smat;
-phi_prime := idmat+rmat*smat+rmat^2+smat*rmat;
 
-// Establish that P = Ker(phi_*) is ker(varphi_Phi) meet Image(Phi)
-P := Kernel(phi) meet Image(phi);
+varphi := idmat+smat+rmat^2+rmat^2*smat;
+varphi_prime := idmat+rmat*smat+rmat^2+smat*rmat;
+
+// Establish that P is ker(varphi_*) meet Image(phi)
+P := Kernel(varphi) meet Image(phi);
 print "space corresponding to prym P",P;
 
 // Up to this point, everything is modeling what we have for the lemma. 
@@ -45,7 +46,7 @@ print "space corresponding to prym P",P;
 // doesn't matter. It's just what the relations are.
 P eq sub<Z8 | one+s-r2-sr2,r-sr+rs-r3>;
 
-Pdual := Kernel(phi_prime) meet Image(psi);
+Pdual := Kernel(varphi_prime) meet Image(psi);
 print "space corresponding to prym Pdual",Pdual;
 
 // we check that psi maps P into Pdual
