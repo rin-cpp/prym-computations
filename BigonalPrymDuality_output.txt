@@ -1,0 +1,46 @@
+
+Associated source: code/BigonalPrymDuality.m
+Description:
+Verification of the group-ring computations used in
+Theorem 3.3.12 of the accompanying MSc thesis.
+
+-----------------------------------
+1. Submodule corresponding to P
+-----------------------------------
+
+RSpace of degree 8, dimension 2 over Integer Ring
+
+Echelonized basis:
+
+( 1  0 -1  0  1  0 -1  0)
+( 0  1  0 -1  0  1  0 -1)
+
+Basis verification:
+true
+
+-----------------------------------
+2. Submodule corresponding to P'
+-----------------------------------
+
+RSpace of degree 8, dimension 2 over Integer Ring
+
+Echelonized basis:
+
+( 1  0 -1  0  0  1  0 -1)
+( 0  1  0 -1 -1  0  1  0)
+
+-----------------------------------
+3. Verification of the induced map
+-----------------------------------
+
+P*psi subset Pdual;
+
+true
+
+-----------------------------------
+4. Multiplication-by-two identity
+-----------------------------------
+
+[b*psi*phi eq 2*b : b in Basis(P)];
+
+[ true, true ]
