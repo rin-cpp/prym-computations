@@ -17,6 +17,11 @@ The code implements computations involving:
 
 The computations are used in the explicit examples appearing in the thesis (or future documents).
 
+## Files
+
+- **`BigonaPrymDuality.m`**: Magma source code.
+- **`BigonaPrymDuality_output.txt`**: Recorded output of the computation, including the computed bases and verification results.
+
 ## Requirements
 
 The code is written for Magma.
